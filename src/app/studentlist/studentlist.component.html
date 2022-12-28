@@ -1,0 +1,37 @@
+<div class="row">
+    
+        <table class="table table-striped">
+            <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>MobilNo</th>
+                    <th>Address</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                    
+                
+            </thead>
+            <tbody>
+               
+                    
+
+                <tr *ngFor="let st of stu">
+                    <td>{{st.id}}</td>
+                    <td>{{st.name}}</td>
+                    <td>{{st.mobile}}</td>
+                    <td>{{st.address}}</td>                    
+                    <td><button class="btn btn-danger" (click)="delete(st.id)">Delete</button></td>                    
+                    <!-- <td><button class="btn btn-success" (click)="edit(st.id)">Edit</button></td> -->
+                    <td><button class="btn btn-success">Edit</button></td>
+                    
+                     
+
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
